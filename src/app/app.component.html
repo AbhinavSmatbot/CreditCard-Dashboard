@@ -1,5 +1,6 @@
 <mat-toolbar class="header-toolbar">
-  <button mat-icon-button (click)="togglesidebar()" class="example-icon" aria-label="Example icon-button with menu icon">
+  <button mat-icon-button (click)="togglesidebar()" class="example-icon"
+    aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
   <span class="app-title">Credit Card Portel</span>
@@ -15,12 +16,10 @@
 <mat-drawer-container class="content-container">
   <mat-drawer mode="side" [opened]="sidebarOpen" class="sidebar">
     sidebar
-    <mat-drawer-content class="main-content">
-      <h1>Credit card admin Dashboard</h1>
-      <router-outlet></router-outlet>
-
-    </mat-drawer-content>
   </mat-drawer>
+  <mat-drawer-content class="main-content">
+    <!-- <h1>Credit card admin Dashboard</h1> -->
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+
 </mat-drawer-container>
-
-
