@@ -8,6 +8,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { CreditcardsModule } from './creditcards/creditcards.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    CreditcardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

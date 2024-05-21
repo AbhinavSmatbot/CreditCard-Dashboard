@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
-import { CreditCard } from '../models/credit-card';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { SelectionModel } from '@angular/cdk/collections';
+import { CreditCard } from '../models/credit-card';
 
 const TABLE_DATA:CreditCard[] = [
   {
@@ -116,10 +118,34 @@ const TABLE_DATA:CreditCard[] = [
   templateUrl: './creditcards.component.html',
   styleUrls: ['./creditcards.component.scss']
 })
-export class CreditcardsComponent {
+export class CreditcardsComponent implements AfterViewInit {
 
-  displayColumns = ['select','id','name','bankName','description','maxCredit','intrestRate','active','recommendedScore'];
+  displayColumns = ['select', 'id', 'name', 'bankName', 'description', 'maxCredit', 'intrestRate', 'active', 'recommendedScore'];
   dataSources = new MatTableDataSource(TABLE_DATA);
-  selection = new SelectionModel(true,[]);
+  selection = new SelectionModel<CreditCard>(true, []);
 
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
+
+  ngAfterViewInit() {
+    this.dataSources.paginator = this.paginator;
+    this.dataSources.sort = this.sort;
+  }
+
+  // selectHandler(row: CreditCard) {
+  //   this.selection.toggle(row);
+  // }
+
+  // isAllSelected() {
+  //   const numSelected = this.selection.selected.length;
+  //   const numRows = this.dataSources.data.length;
+  //   return numSelected === numRows;
+  // }
+
+  // masterToggle() {
+  //   this.isAllSelected() ?
+  //     this.selection.clear() :
+  //     this.dataSources.data.forEach(row => this.selection.select(row));
+  // }
+  
 }
