@@ -74,6 +74,65 @@
       "numberOfApplication": 40,
       "createdDate": "15-05-2024",
       "termAndCondiion": "the following credit apply for the card"
+    },
+    {
+      "id": "8",
+      "cardName": "hdfc bank",
+      "bankName": "hdfc bank of india",
+      "description": "bank provide offer hdfc",
+      "maxCredit": 8000,
+      "active": true,
+      "annualFee": 0,
+      "intrestRate": 13.5,
+      "interoOffer": 200,
+      "recommendedCreditScore": "600-800",
+      "numberOfApplication": 40,
+      "createdDate": "15-05-2024",
+      "termAndCondiion": "the following credit apply for the card"
+    },
+    {
+      "id": "9",
+      "cardName": "hdfc bank",
+      "bankName": "hdfc bank of india",
+      "description": "bank provide offer hdfc",
+      "maxCredit": 8000,
+      "active": true,
+      "annualFee": 0,
+      "intrestRate": 13.5,
+      "interoOffer": 200,
+      "recommendedCreditScore": "600-800",
+      "numberOfApplication": 40,
+      "createdDate": "15-05-2024",
+      "termAndCondiion": "the following credit apply for the card"
+    },
+    {
+      "id": "10",
+      "cardName": "hdfc bank",
+      "bankName": "hdfc bank of india",
+      "description": "bank provide offer hdfc",
+      "maxCredit": 8000,
+      "active": true,
+      "annualFee": 0,
+      "intrestRate": 13.5,
+      "interoOffer": 200,
+      "recommendedCreditScore": "600-800",
+      "numberOfApplication": 40,
+      "createdDate": "15-05-2024",
+      "termAndCondiion": "the following credit apply for the card"
+    },
+    {
+      "id": 0,
+      "cardName": "abhinav",
+      "description": "daklsd qwiodq",
+      "bankName": "jkjkbkb jk kj kj kj ",
+      "maxCredit": "7474",
+      "intrestRate": "464",
+      "active": true,
+      "recommendedScore": "400-600",
+      "annualFee": "415654",
+      "termAndConditions": "term and conditon for credit card",
+      "createdDate": "2024-05-21T18:30:00.000Z",
+      "updateDate": "2024-05-23T18:30:00.000Z"
     }
   ]
 }
