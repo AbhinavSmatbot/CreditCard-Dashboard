@@ -9,12 +9,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { CreditcardsModule } from './creditcards/creditcards.module';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { CreditcardsModule } from './creditcards/creditcards.module';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    CreditcardsModule
+    CreditcardsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,7 @@ import { MatPaginatorModule} from '@angular/material/paginator';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatSortModule } from '@angular/material/sort';
 import { HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatPaginatorModule,
     MatCheckboxModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ]
 })
 export class CreditcardsModule { }

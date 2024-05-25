@@ -1,1 +1,26 @@
-<p>view works!</p>
+
+    <h1>Credit Card Details</h1>
+    <ng-container *ngIf="creditCardDetails">
+        <mat-card class="example-card " style="margin: 20px !important;">
+            <mat-card-header>
+              <mat-card-title-group>
+                <mat-card-title>{{creditCardDetails?.cardName}}</mat-card-title>
+                <mat-card-subtitle>{{creditCardDetails?.bankName}}</mat-card-subtitle>
+              </mat-card-title-group>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-card-subtitle>{{creditCardDetails?.id}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.description}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.maxCredit}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.intrestRate}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.active}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.recommendedScore}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.annualFee}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.termAndConditions}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.createdDate}}</mat-card-subtitle>
+                <mat-card-subtitle>{{creditCardDetails?.updateDate}}</mat-card-subtitle>
+            </mat-card-content>
+          </mat-card>
+
+    </ng-container>
+
