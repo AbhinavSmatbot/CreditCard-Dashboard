@@ -2,18 +2,17 @@
   "creditcards": [
     {
       "id": "1",
-      "cardName": "bank of america",
-      "bankName": "bank of america",
+      "cardName": "bank of america222",
       "description": "bank provide offer",
+      "bankName": "bank of america",
       "maxCredit": 8000,
+      "intrestRate": "13711",
       "active": true,
-      "annualFee": 0,
-      "intrestRate": 13.5,
-      "interoOffer": 200,
-      "recommendedCreditScore": "600-800",
-      "numberOfApplication": 40,
+      "recommendedScore": "400-500",
+      "annualFee": "4110",
+      "termAndConditions": "555",
       "createdDate": "15-05-2024",
-      "termAndCondiion": "the following credit apply for the card"
+      "updateDate": "jhjcjcuj"
     },
     {
       "id": "2",
@@ -50,21 +49,6 @@
       "cardName": "pnb bank",
       "bankName": "bnb bank of india",
       "description": "bank provide offer pnb",
-      "maxCredit": 8000,
-      "active": true,
-      "annualFee": 0,
-      "intrestRate": 13.5,
-      "interoOffer": 200,
-      "recommendedCreditScore": "600-800",
-      "numberOfApplication": 40,
-      "createdDate": "15-05-2024",
-      "termAndCondiion": "the following credit apply for the card"
-    },
-    {
-      "id": "7",
-      "cardName": "hdfc bank",
-      "bankName": "hdfc bank of india",
-      "description": "bank provide offer hdfc",
       "maxCredit": 8000,
       "active": true,
       "annualFee": 0,
@@ -123,15 +107,15 @@
     {
       "id": 0,
       "cardName": "abhinav",
-      "description": "daklsd qwiodq",
+      "description": "assa",
       "bankName": "jkjkbkb jk kj kj kj ",
-      "maxCredit": "7474",
-      "intrestRate": "464",
+      "maxCredit": "0rtheherg",
+      "intrestRate": "5442",
       "active": true,
-      "recommendedScore": "400-600",
-      "annualFee": "415654",
+      "recommendedScore": "400-500",
+      "annualFee": "74742",
       "termAndConditions": "term and conditon for credit card",
-      "createdDate": "2024-05-21T18:30:00.000Z",
+      "createdDate": "2024-05-15T18:30:00.000Z",
       "updateDate": "2024-05-23T18:30:00.000Z"
     }
   ]

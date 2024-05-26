@@ -1,1 +1,60 @@
-<p>edit works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Edit Credit Card</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="editCreditCardForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <mat-form-field class="half-width">
+                    <mat-label>Card Name</mat-label>
+                    <input matInput placeholder="Enter your name" formControlName="cardName">
+                </mat-form-field>
+                <mat-form-field class="half-width">
+                    <mat-label>Bank Name</mat-label>
+                    <input matInput placeholder="Enter your bank name" formControlName="bankName">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+
+            </div>
+            <div class="form-group">
+                <mat-form-field class="full-width">
+                    <mat-label>Card Description</mat-label>
+                    <input matInput placeholder="Enter your description" formControlName="description">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="half-width">
+                    <mat-label>Card Max Credit</mat-label>
+                    <input matInput placeholder="Enter your Max Credit" formControlName="maxCredit">
+                </mat-form-field>
+                <mat-form-field class="half-width">
+                    <mat-label>Card intrestRate</mat-label>
+                    <input matInput placeholder="Enter your intrestRate" formControlName="intrestRate">
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field class="half-width">
+                    <mat-label>Card recommendedScore</mat-label>
+                    <mat-select placeholder="select recommendedScore" formControlName="recommendedScore">
+                        <mat-option value="100-500">100-500</mat-option>
+                        <mat-option value="300-500">300-500</mat-option>
+                        <mat-option value="400-500">400-500</mat-option>
+                        <mat-option value="400-600">400-600</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="half-width">
+                    <mat-label>Card annualFee</mat-label>
+                    <input matInput placeholder="Enter your annualFee" formControlName="annualFee">
+                </mat-form-field>
+            </div>
+
+
+            <div class="form-group" style="margin-top: 20px;">
+                <button class="full-width" style="height: 40px;" mat-raised-button color="primary">Add New Credit
+                    Card</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
